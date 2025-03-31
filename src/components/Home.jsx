@@ -54,8 +54,8 @@ function Home() {
               image={portfolio}
               title={"Portfolio"}
               description={"My own digital home on th internet"}
-              preview={"https://weather-io-iota.vercel.app/"}
-              github={"https://github.com/prince-kr-dev/weather.io"}
+              preview={"https://portfolio-prince-kumars-projects-44631821.vercel.app/"}
+              github={"https://github.com/prince-kr-dev/portfolio"}
               />
             <ProjectCard
               image={weather}
