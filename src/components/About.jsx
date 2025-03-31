@@ -30,10 +30,7 @@ function About() {
             💻 Skills & Expertise
           </h1>
           <p className="text-md font-light text-gray-400">
-            I am a pre-final year Computer Science student with a strong passion
-            for web development. My academic journey has equipped me with
-            problem-solving skills and a solid foundation in programming and
-            software development.
+            I specialize in frontend development, where I enjoy creating responsive and visually appealing user interfaces. Additionally, I have a basic yet growing understanding of Data Structures and Algorithms (DSA), which helps me write efficient and optimized code.
           </p>
           <h1 className="text-xl font-medium mb-3 mt-5">
             🛠️ Tech Stack & Tools
