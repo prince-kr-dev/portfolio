@@ -1,12 +1,57 @@
-# React + Vite
+# 🚀 **Portfolio Website**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a personal portfolio website built using **React.js** and **Tailwind CSS**, showcasing my skills, projects, and contact information. The website uses **React Router DOM** for navigation between different sections.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 **Tech Stack**
 
-## Expanding the ESLint configuration
+- **Frontend:** React.js, Tailwind CSS
+- **Routing:** React Router DOM
+- **Deployment:** Vercel
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🌟 **Features**
+
+✅ **Home Section:** 
+- Brief introduction with a headline and call-to-action.
+
+✅ **About Section:** 
+- Details about my skills, tech stack, and experience.
+
+✅ **Projects Section:** 
+- Displays featured projects with descriptions, technologies used, and demo links.
+
+✅ **Blog Section:** 
+- Contains blogs related to web development and technical concepts.  
+
+✅ **Contact Section:** 
+- Includes links to my social profiles.
+
+✅ **Responsive Design:** 
+- Fully responsive and mobile-friendly design using Tailwind CSS.
+
+✅ **Routing:** 
+- Implemented client-side navigation using React Router DOM.
+
+## ⚙️ **Folder Structure**
+
+```
+/public
+  └── index.html
+/src
+  ├── assets         → Images, icons, and logos
+  ├── components     → Reusable React components (Navbar, Footer, etc.)
+  ├── App.js         → App component that renders all components
+  ├── Main.js        → Main component with routing setup
+  ├── index.js       → Application entry point
+  ├── tailwind.config.js → Tailwind configuration
+  └── README.md      → Project documentation
+```
+
+---
+
+## 🌐 **Live Demo**
+
+🔗 [Portfolio Live](<your-deployed-link>)  
