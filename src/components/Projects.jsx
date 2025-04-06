@@ -22,7 +22,7 @@ function Projects() {
             image={portfolio}
             title={"Portfolio"}
             description={"My own digital home on th internet"}
-            preview={"https://portfolio-prince-kumars-projects-44631821.vercel.app/"}
+            preview={"https://portfolio-iota-prince.vercel.app/"}
             github={"https://github.com/prince-kr-dev/portfolio"}
             />
           <ProjectCard
