@@ -52,6 +52,6 @@ This is a personal portfolio website built using **React.js** and **Tailwind CSS
 
 ---
 
-## 🌐 **Live Demo**
+## 🌐 **Live Link**
 
 🔗 [Live Link to Portfolio](https://portfolio-iota-prince.vercel.app/)  
