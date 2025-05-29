@@ -4,6 +4,7 @@ import portfolio from "../assets/portfolio.png";
 import weather from "../assets/weather.png";
 import hookImg from "../assets/react-hook.png";
 import routerImg from "../assets/react-router.png";
+import leetanlyzer from "../assets/leetanalyzer.png"
 import BlogCard from "./BlogCard";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -51,11 +52,11 @@ function Home() {
           </h1>
           <div className="flex justify-between flex-wrap mt-5">
             <ProjectCard
-              image={portfolio}
-              title={"Portfolio"}
-              description={"My own digital home on th internet"}
-              preview={"https://portfolio-prince-kumars-projects-44631821.vercel.app/"}
-              github={"https://github.com/prince-kr-dev/portfolio"}
+              image={leetanlyzer}
+              title={"LeetAnalyze"}
+              description={"A LeetCode analyzer and Comparator"}
+              preview={"https://leet-analyze.vercel.app/"}
+              github={"https://github.com/prince-kr-dev/leet-analyze?tab=readme-ov-file"}
               />
             <ProjectCard
               image={weather}

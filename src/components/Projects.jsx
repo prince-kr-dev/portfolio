@@ -5,6 +5,8 @@ import music from "../assets/music.png";
 import weather1 from "../assets/react-weather.png";
 import weather2 from "../assets/weather.png";
 import translator from "../assets/translator.png";
+import lumea from "../assets/lumea.png";
+import leetanalyzer from "../assets/leetanalyzer.png";
 import Footer from "./Footer";
 
 function Projects() {
@@ -18,6 +20,20 @@ function Projects() {
           A collection of finest project that i have built
         </p>
         <div className="flex justify-between flex-wrap mt-15 gap-y-5">
+          <ProjectCard
+            image={leetanalyzer}
+            title={"LeetAnalyzer"}
+            description={"A LeetCode analyzer and Comparator"}
+            preview={"https://leet-analyze.vercel.app/"}
+            github={"https://github.com/prince-kr-dev/leet-analyze?tab=readme-ov-file"}
+            />
+            <ProjectCard
+            image={lumea}
+            title={"Lumea AI ChatBot"}
+            description={"An AI chat bot using Gemini API"}
+            preview={"https://lumea-ai.vercel.app/"}
+            github={"https://github.com/prince-kr-dev/lumea-ai"}
+            />
           <ProjectCard
             image={portfolio}
             title={"Portfolio"}
