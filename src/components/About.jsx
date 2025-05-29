@@ -1,5 +1,6 @@
 import Footer from "./Footer";
 import profile from "../assets/profile.png";
+import resume from "../assets/Prince_Kumar_Resume.pdf";
 
 function About() {
   return (
@@ -45,7 +46,8 @@ function About() {
             </div>
           </div>
           <a
-            href={"#"}
+            href={resume}
+            download="Prince_Resume.pdf"
             className="mt-5 text-xl font-medium border-2 w-fit px-3 py-1 md:px-4 md:py-2 rounded-md hover:bg-black-hover transition-all flex items-center gap-2"
           >
             <i className="ri-file-text-line text-2xl"></i>
