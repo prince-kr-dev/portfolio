@@ -4,7 +4,7 @@ import portfolio from "../assets/portfolio.png";
 import weather from "../assets/weather.png";
 import hookImg from "../assets/react-hook.png";
 import routerImg from "../assets/react-router.png";
-import leetanlyzer from "../assets/leetanalyzer.png"
+import leetanlyzer from "../assets/leetanalyzer.png";
 import BlogCard from "./BlogCard";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -56,8 +56,10 @@ function Home() {
               title={"LeetAnalyze"}
               description={"A LeetCode analyzer and Comparator"}
               preview={"https://leet-analyze.vercel.app/"}
-              github={"https://github.com/prince-kr-dev/leet-analyze?tab=readme-ov-file"}
-              />
+              github={
+                "https://github.com/prince-kr-dev/leet-analyze?tab=readme-ov-file"
+              }
+            />
             <ProjectCard
               image={weather}
               title={"Weather App"}
@@ -78,22 +80,23 @@ function Home() {
 
         {/* blogs */}
         <div className="pt-12 pb-5 flex flex-col gap-3">
-          <h1 className="text-md font-semibold text-heading">
-            Writing
-          </h1>
-          <h1 className="text-xl md:text-2xl font-semibold">
-            Latest Posts
-          </h1>
+          <h1 className="text-md font-semibold text-heading">Writing</h1>
+          <h1 className="text-xl md:text-2xl font-semibold">Latest Posts</h1>
           <div className="flex justify-between flex-wrap mt-5">
             <BlogCard
               image={hookImg}
               date={"Feb 27, 2025"}
-              title={"React Hooks Explained: useState, useEffect, and useContext"}
+              title={
+                "React Hooks Explained: useState, useEffect, and useContext"
+              }
+              url="https://medium.com/@princekr.kush007/react-hooks-explained-usestate-useeffect-and-usecontext-for-beginners-d8b8772a51e7"
             />
             <BlogCard
               image={routerImg}
               date={"Mar 12, 2025"}
-              title={"React Router: Navigation Made Easy, All about react router"}
+              title={
+                "React Router: Navigation Made Easy, All about react router"
+              }
             />
           </div>
 
@@ -106,8 +109,8 @@ function Home() {
           </Link>
         </div>
 
-        <Contact/>
-        <Footer/>
+        <Contact />
+        <Footer />
       </div>
     </>
   );
