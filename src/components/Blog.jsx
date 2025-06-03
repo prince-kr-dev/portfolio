@@ -18,13 +18,13 @@ function Blog() {
             image={hookImg}
             date={"Feb 27, 2025"}
             title={"React Hooks Explained: useState, useEffect, and useContext"}
-            url=
-              "https://medium.com/@princekr.kush007/react-hooks-explained-usestate-useeffect-and-usecontext-for-beginners-d8b8772a51e7"
+            url="https://medium.com/@princekr.kush007/react-hooks-explained-usestate-useeffect-and-usecontext-for-beginners-d8b8772a51e7"
           />
           <BlogCard
             image={routerImg}
             date={"Mar 12, 2025"}
             title={"React Router: Navigation Made Easy, All about react router"}
+            url="https://medium.com/@princekr.kush007/react-router-made-easy-for-beginners-70962130c2b1"
           />
         </div>
         <Footer />

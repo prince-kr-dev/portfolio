@@ -97,6 +97,7 @@ function Home() {
               title={
                 "React Router: Navigation Made Easy, All about react router"
               }
+              url="https://medium.com/@princekr.kush007/react-router-made-easy-for-beginners-70962130c2b1"
             />
           </div>
 
