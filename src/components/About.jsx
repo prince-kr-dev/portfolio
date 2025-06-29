@@ -39,10 +39,10 @@ function About() {
           <div className="text-md font-light text-gray-400">
             I am proficient in the following technologies:
             <div className="pl-3 flex flex-col">
-              <span>☻ Languages: C, C++, and JavaScript</span>
-              <span>☻ Frontend: HTML, CSS, and React.js</span>
-              <span>☻ Styling: CSS3, Tailwind CSS </span>
-              <span>☻ Version Control: Git and GitHub</span>
+              <span>☻ <b className="font-semibold">Languages:</b> C, C++, and JavaScript</span>
+              <span>☻ <b className="font-semibold">Frontend:</b> HTML, CSS, and React.js</span>
+              <span>☻ <b className="font-semibold">Styling:</b> CSS3, Tailwind CSS </span>
+              <span>☻ <b className="font-semibold">Version Control:</b> Git and GitHub</span>
             </div>
           </div>
           <a
