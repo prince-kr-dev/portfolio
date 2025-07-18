@@ -9,10 +9,44 @@ import BlogCard from "./BlogCard";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
+const projects = [
+  {
+    image: leetanlyzer,
+    title: "LeetAnalyze",
+    description: "A LeetCode analyzer and Comparator",
+    preview: "https://leet-analyze.vercel.app/",
+    github:
+      "https://github.com/prince-kr-dev/leet-analyze?tab=readme-ov-file",
+  },
+  {
+    image: weather,
+    title: "Weather App",
+    description: "Real time weather report using API",
+    preview: "https://weather-io-iota.vercel.app/",
+    github: "https://github.com/prince-kr-dev/weather.io",
+  },
+];
+
+const blogs = [
+  {
+    image: hookImg,
+    date: "Feb 27, 2025",
+    title: "React Hooks Explained: useState, useEffect, and useContext",
+    url: "https://medium.com/@princekr.kush007/react-hooks-explained-usestate-useeffect-and-usecontext-for-beginners-d8b8772a51e7",
+  },
+  {
+    image: routerImg,
+    date: "Mar 12, 2025",
+    title: "React Router: Navigation Made Easy, All about react router",
+    url: "https://medium.com/@princekr.kush007/react-router-made-easy-for-beginners-70962130c2b1",
+  },
+];
+
 function Home() {
   return (
     <>
       <div className="pt-10 md:pt-20 px-7 md:px-20 lg:px-45">
+        {/* Hero Section */}
         <div className="pt-20 flex flex-col gap-2">
           <h1 className="text-4xl md:text-6xl font-semibold">
             Hi, I'm <span className="text-heading">Prince Kumar</span>
@@ -43,6 +77,7 @@ function Home() {
           </div>
         </div>
 
+        {/* Projects Section */}
         <div className="pt-12 pb-5 flex flex-col gap-3">
           <h1 className="text-md font-semibold text-heading">
             Highlighted Projects
@@ -51,22 +86,16 @@ function Home() {
             What I've been working on
           </h1>
           <div className="flex justify-between flex-wrap mt-5">
-            <ProjectCard
-              image={leetanlyzer}
-              title={"LeetAnalyze"}
-              description={"A LeetCode analyzer and Comparator"}
-              preview={"https://leet-analyze.vercel.app/"}
-              github={
-                "https://github.com/prince-kr-dev/leet-analyze?tab=readme-ov-file"
-              }
-            />
-            <ProjectCard
-              image={weather}
-              title={"Weather App"}
-              description={"Real time weather report using API"}
-              preview={"https://weather-io-iota.vercel.app/"}
-              github={"https://github.com/prince-kr-dev/weather.io"}
-            />
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                image={project.image}
+                title={project.title}
+                description={project.description}
+                preview={project.preview}
+                github={project.github}
+              />
+            ))}
           </div>
 
           <Link
@@ -78,27 +107,20 @@ function Home() {
           </Link>
         </div>
 
-        {/* blogs */}
+        {/* Blogs Section */}
         <div className="pt-12 pb-5 flex flex-col gap-3">
           <h1 className="text-md font-semibold text-heading">Writing</h1>
           <h1 className="text-xl md:text-2xl font-semibold">Latest Posts</h1>
           <div className="flex justify-between flex-wrap mt-5">
-            <BlogCard
-              image={hookImg}
-              date={"Feb 27, 2025"}
-              title={
-                "React Hooks Explained: useState, useEffect, and useContext"
-              }
-              url="https://medium.com/@princekr.kush007/react-hooks-explained-usestate-useeffect-and-usecontext-for-beginners-d8b8772a51e7"
-            />
-            <BlogCard
-              image={routerImg}
-              date={"Mar 12, 2025"}
-              title={
-                "React Router: Navigation Made Easy, All about react router"
-              }
-              url="https://medium.com/@princekr.kush007/react-router-made-easy-for-beginners-70962130c2b1"
-            />
+            {blogs.map((blog, index) => (
+              <BlogCard
+                key={index}
+                image={blog.image}
+                date={blog.date}
+                title={blog.title}
+                url={blog.url}
+              />
+            ))}
           </div>
 
           <Link

@@ -1,7 +1,7 @@
 import Footer from "./Footer";
 import BlogCard from "./BlogCard";
-import hookImg from "../assets/react-hook.png";
-import routerImg from "../assets/react-router.png";
+
+import { blogPosts } from "../Data/Constants";
 
 function Blog() {
   return (
@@ -14,18 +14,15 @@ function Blog() {
           A platform where I openly share my thoughts, ideas, and experiences.
         </p>
         <div className="flex justify-between flex-wrap mt-15 gap-y-5">
-          <BlogCard
-            image={hookImg}
-            date={"Feb 27, 2025"}
-            title={"React Hooks Explained: useState, useEffect, and useContext"}
-            url="https://medium.com/@princekr.kush007/react-hooks-explained-usestate-useeffect-and-usecontext-for-beginners-d8b8772a51e7"
-          />
-          <BlogCard
-            image={routerImg}
-            date={"Mar 12, 2025"}
-            title={"React Router: Navigation Made Easy, All about react router"}
-            url="https://medium.com/@princekr.kush007/react-router-made-easy-for-beginners-70962130c2b1"
-          />
+          {blogPosts.map((blog, index) => (
+            <BlogCard
+              key={index}
+              image={blog.image}
+              date={blog.date}
+              title={blog.title}
+              url={blog.url}
+            />
+          ))}
         </div>
         <Footer />
       </div>
