@@ -8,9 +8,9 @@ import Projects from "./Projects";
 function Nav({setShowmodel}) {
   return (
     <>
-      <div className="bg-my-black h-16 w-full flex justify-between items-center px-5 md:px-20 lg:px-45 fixed z-10">
+      <div className="h-16 w-full flex justify-between items-center px-5 md:px-20 lg:px-45 fixed z-10">
         <img className="h-12 w-12 md:h-15 md:w-15" src={logo} alt="" />
-        <div className="text-md font-medium text-gray-400 gap-5 hidden md:flex">
+        <div className="backdrop-blur-md bg-white/5 text-md font-medium text-gray-400 gap-5 hidden md:flex py-3 px-10 rounded-full overflow-hidden">
           <Link to={"/"} className="hover:text-white transition-all">
             Home
           </Link>
