@@ -5,6 +5,7 @@ import weather from "../assets/weather.png";
 import hookImg from "../assets/react-hook.png";
 import routerImg from "../assets/react-router.png";
 import leetanlyzer from "../assets/leetanalyzer.png";
+import devTinder from "../assets/devTinder.png";
 import BlogCard from "./BlogCard";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -19,11 +20,11 @@ const projects = [
       "https://github.com/prince-kr-dev/leet-analyze?tab=readme-ov-file",
   },
   {
-    image: weather,
-    title: "Weather App",
-    description: "Real time weather report using API",
-    preview: "https://weather-io-iota.vercel.app/",
-    github: "https://github.com/prince-kr-dev/weather.io",
+    image: devTinder,
+    title: "dev Tinder [Coming Soon...]",
+    description: "DevTinder Backend - connecting coders beyond the code.",
+    preview: "https://github.com/prince-kr-dev/dev-tinder-backend",
+    github: "https://github.com/prince-kr-dev/dev-tinder-backend",
   },
 ];
 

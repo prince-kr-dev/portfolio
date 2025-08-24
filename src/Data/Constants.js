@@ -7,6 +7,7 @@ import weather2 from "../assets/weather.png";
 import translator from "../assets/translator.png";
 import lumea from "../assets/lumea.png";
 import leetanalyzer from "../assets/leetanalyzer.png";
+import devTinder from "../assets/devTinder.png";
 
 //imported files for blog
 import hookImg from "../assets/react-hook.png";
@@ -21,6 +22,13 @@ export const projectList = [
     description: "A LeetCode analyzer and Comparator",
     preview: "https://leet-analyze.vercel.app/",
     github: "https://github.com/prince-kr-dev/leet-analyze?tab=readme-ov-file",
+  },
+  {
+    image: devTinder,
+    title: "dev Tinder [Coming Soon...]",
+    description: "DevTinder Backend - connecting coders beyond the code.",
+    preview: "https://github.com/prince-kr-dev/dev-tinder-backend",
+    github: "https://github.com/prince-kr-dev/dev-tinder-backend",
   },
   {
     image: portfolio,
