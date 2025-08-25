@@ -9,6 +9,7 @@ import devTinder from "../assets/devTinder.png";
 import BlogCard from "./BlogCard";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Marquee from "./Marquee";
 
 const projects = [
   {
@@ -132,7 +133,7 @@ function Home() {
             <i className="ri-arrow-right-s-line text-2xl"></i>
           </Link>
         </div>
-
+        <Marquee/>
         <Contact />
         <Footer />
       </div>
