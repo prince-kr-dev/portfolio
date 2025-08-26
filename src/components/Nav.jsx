@@ -9,7 +9,7 @@ function Nav({setShowmodel}) {
   return (
     <>
       <div className="h-16 w-full flex justify-between items-center px-5 md:px-20 lg:px-45 fixed z-10">
-        <img className="h-12 w-12 md:h-15 md:w-15" src={logo} alt="" />
+        <img className="rounded-full h-12 w-12 md:h-15 md:w-15" src={logo} alt="" />
         <div className="backdrop-blur-md bg-white/5 text-md font-medium text-gray-400 gap-5 hidden md:flex py-3 px-10 rounded-full overflow-hidden">
           <Link to={"/"} className="hover:text-white transition-all">
             Home
@@ -24,7 +24,7 @@ function Nav({setShowmodel}) {
             Blog
           </Link>
         </div>
-        <button onClick={()=>setShowmodel(true)}><i className="ri-command-line text-2xl font-light p-2 rounded hover:bg-light-black hover:cursor-pointer transition-all"></i></button>
+        <button onClick={()=>setShowmodel(true)}><i className="ri-command-line text-2xl font-light p-2 rounded backdrop-blur-md bg-white/10 hover:cursor-pointer transition-all"></i></button>
       </div>
 
       <Routes>
