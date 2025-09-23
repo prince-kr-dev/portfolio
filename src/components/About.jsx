@@ -31,7 +31,10 @@ function About() {
             💻 Skills & Expertise
           </h1>
           <p className="text-md font-light text-gray-400">
-            I specialize in frontend development, where I enjoy creating responsive and visually appealing user interfaces. Additionally, I have a basic yet growing understanding of Data Structures and Algorithms (DSA), which helps me write efficient and optimized code.
+            I specialize in frontend development, where I enjoy creating
+            responsive and visually appealing user interfaces. Additionally, I
+            have a basic yet growing understanding of Data Structures and
+            Algorithms (DSA), which helps me write efficient and optimized code.
           </p>
           <h1 className="text-xl font-medium mb-3 mt-5">
             🛠️ Tech Stack & Tools
@@ -39,16 +42,28 @@ function About() {
           <div className="text-md font-light text-gray-400">
             I am proficient in the following technologies:
             <div className="pl-3 flex flex-col">
-              <span>☻ <b className="font-semibold">Languages:</b> C, C++, and JavaScript</span>
-              <span>☻ <b className="font-semibold">Frontend:</b> HTML, CSS, and React.js</span>
-              <span>☻ <b className="font-semibold">Styling:</b> CSS3, Tailwind CSS </span>
-              <span>☻ <b className="font-semibold">Version Control:</b> Git and GitHub</span>
+              <span>
+                ☻ <b className="font-semibold">Languages:</b> C, C++, and
+                JavaScript
+              </span>
+              <span>
+                ☻ <b className="font-semibold">Frontend:</b> HTML, CSS, and
+                React.js
+              </span>
+              <span>
+                ☻ <b className="font-semibold">Styling:</b> CSS3, Tailwind CSS{" "}
+              </span>
+              <span>
+                ☻ <b className="font-semibold">Version Control:</b> Git and
+                GitHub
+              </span>
             </div>
           </div>
           <a
             href={resume}
-            download="Prince_Resume.pdf"
-            className="mt-5 text-xl font-medium border-2 w-fit px-3 py-1 md:px-4 md:py-2 rounded-md hover:bg-black-hover transition-all flex items-center gap-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 text-xl font-medium border-2 w-fit px-2 py-0.5 md:px-3 md:py-1 rounded-md hover:bg-black-hover transition-all flex items-center gap-2"
           >
             <i className="ri-file-text-line text-2xl"></i>
             My Resume

@@ -1,31 +1,30 @@
 import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
-import portfolio from "../assets/portfolio.png";
-import weather from "../assets/weather.png";
+import budgetMate from "../assets/budgetMate.png";
 import hookImg from "../assets/react-hook.png";
 import routerImg from "../assets/react-router.png";
-import leetanlyzer from "../assets/leetanalyzer.png";
-import devTinder from "../assets/devTinder.png";
+import leetanalyzer from "../assets/leetanalyzer.png";
 import BlogCard from "./BlogCard";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Marquee from "./Marquee";
+import Skills from "./Skills";
+import resume from "../assets/Prince_Kumar_Resume.pdf";
 
 const projects = [
   {
-    image: leetanlyzer,
+    image: budgetMate,
+    title: "BudgetMate",
+    description: "DevTinder Backend - connecting coders beyond the code.",
+    preview: "https://budget-mate-net.vercel.app/",
+    github: "https://github.com/prince-kr-dev/BudgetMate",
+  },
+  {
+    image: leetanalyzer,
     title: "LeetAnalyze",
     description: "A LeetCode analyzer and Comparator",
     preview: "https://leet-analyze.vercel.app/",
-    github:
-      "https://github.com/prince-kr-dev/leet-analyze?tab=readme-ov-file",
-  },
-  {
-    image: devTinder,
-    title: "dev Tinder [Coming Soon...]",
-    description: "DevTinder Backend - connecting coders beyond the code.",
-    preview: "https://github.com/prince-kr-dev/dev-tinder-backend",
-    github: "https://github.com/prince-kr-dev/dev-tinder-backend",
+    github: "https://github.com/prince-kr-dev/leet-analyze?tab=readme-ov-file",
   },
 ];
 
@@ -60,23 +59,28 @@ function Home() {
             I craft fantastic things with code. I also write about those things.
           </h2>
 
-          <Link
-            to={"/about"}
-            className="text-xl font-medium border-2 w-fit px-3 py-1 md:px-4 md:py-2 rounded-md hover:bg-black-hover transition-all flex items-center gap-2"
-          >
-            Discover More
-            <i className="ri-arrow-right-s-line text-2xl"></i>
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link
+              to={"/about"}
+              className="text-md md:text-lg font-medium border-2 w-fit px-3 py-1 md:px-4 md:py-1 rounded-sm hover:bg-black-hover transition-all flex items-center gap-2"
+            >
+              More
+              <i className="ri-arrow-right-s-line text-xl"></i>
+            </Link>
 
-          <h1 className="text-md font-semibold mt-10 md:mt-20">Teck Stack</h1>
-          <div className="flex items-center gap-2 text-3xl md:text-4xl">
-            <i className="ri-html5-fill hover:text-orange-700 hover:scale-105 transition-all"></i>
-            <i className="ri-css3-fill hover:text-blue-600 hover:scale-105 transition-all"></i>
-            <i className="ri-javascript-fill hover:text-yellow-500 hover:scale-105 transition-all"></i>
-            <i className="ri-reactjs-line hover:text-sky-500 hover:scale-105 transition-all"></i>
-            <i className="ri-tailwind-css-fill hover:text-sky-700 hover:scale-105 transition-all"></i>
-            <i className="ri-git-merge-fill hover:text-orange-500 hover:scale-105 transition-all"></i>
+            <a
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-md md:text-lg font-medium border-2 w-fit px-3 py-1 md:px-4 md:py-1 rounded-sm hover:bg-black-hover transition-all flex items-center gap-2"
+            >
+              <i className="ri-file-text-line text-xl"></i>
+              Resume
+            </a>
           </div>
+
+          <h1 className="text-2xl font-semibold mt-10 md:mt-20">Teck Stack</h1>
+          <Skills />
         </div>
 
         {/* Projects Section */}
@@ -133,7 +137,6 @@ function Home() {
             <i className="ri-arrow-right-s-line text-2xl"></i>
           </Link>
         </div>
-        <Marquee/>
         <Contact />
         <Footer />
       </div>

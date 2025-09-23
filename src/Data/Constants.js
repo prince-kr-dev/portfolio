@@ -1,13 +1,12 @@
 //imported files for project
 import portfolio from "../assets/portfolio.png";
 import crypto from "../assets/crypto.png";
-import music from "../assets/music.png";
 import weather1 from "../assets/react-weather.png";
-import weather2 from "../assets/weather.png";
 import translator from "../assets/translator.png";
 import lumea from "../assets/lumea.png";
 import leetanalyzer from "../assets/leetanalyzer.png";
-import devTinder from "../assets/devTinder.png";
+import budgetMate from "../assets/budgetMate.png";
+import productDesk from "../assets/productDesk.png";
 
 //imported files for blog
 import hookImg from "../assets/react-hook.png";
@@ -17,18 +16,25 @@ import routerImg from "../assets/react-router.png";
 
 export const projectList = [
   {
+    image: budgetMate,
+    title: "BudgetMate",
+    description: "BudgetMate - Track you daily expenses and get monthly insights.",
+    preview: "https://budget-mate-net.vercel.app/",
+    github: "https://github.com/prince-kr-dev/BudgetMate",
+  },
+  {
     image: leetanalyzer,
-    title: "LeetAnalyzer",
+    title: "LeetAnalyze",
     description: "A LeetCode analyzer and Comparator",
     preview: "https://leet-analyze.vercel.app/",
     github: "https://github.com/prince-kr-dev/leet-analyze?tab=readme-ov-file",
   },
   {
-    image: devTinder,
-    title: "dev Tinder [Coming Soon...]",
-    description: "DevTinder Backend - connecting coders beyond the code.",
-    preview: "https://github.com/prince-kr-dev/dev-tinder-backend",
-    github: "https://github.com/prince-kr-dev/dev-tinder-backend",
+    image: productDesk,
+    title: "ProductDesk",
+    description: "Simple cart with CRUD operations.",
+    preview: "https://leet-analyze.vercel.app/",
+    github: "https://github.com/prince-kr-dev/leet-analyze?tab=readme-ov-file",
   },
   {
     image: portfolio,
@@ -38,30 +44,9 @@ export const projectList = [
     github: "https://github.com/prince-kr-dev/portfolio",
   },
   {
-    image: lumea,
-    title: "Lumea AI ChatBot",
-    description: "An AI chat bot using Gemini API",
-    preview: "https://lumea-ai.vercel.app/",
-    github: "https://github.com/prince-kr-dev/lumea-ai",
-  },
-  {
     image: weather1,
-    title: "Weather App by React",
-    description: "Live weather forecasting by react",
-    preview: "https://weather-io-iota.vercel.app/",
-    github: "https://github.com/prince-kr-dev/weather.io",
-  },
-  {
-    image: crypto,
-    title: "Cryptoland Home page",
-    description: "A Crypto landing page",
-    preview: "https://crypto-land-omega.vercel.app/",
-    github: "https://github.com/prince-kr-dev/crypto-land",
-  },
-  {
-    image: weather2,
     title: "Weather App",
-    description: "Weather forecast using API",
+    description: "Live weather forecasting by react",
     preview: "https://weather-io-iota.vercel.app/",
     github: "https://github.com/prince-kr-dev/weather.io",
   },
@@ -73,11 +58,11 @@ export const projectList = [
     github: "https://github.com/prince-kr-dev/translate.io",
   },
   {
-    image: music,
-    title: "Music Player",
-    description: "Music Player with playlist featues",
-    preview: "https://prince-kr-dev.github.io/music-flowww/",
-    github: "https://github.com/prince-kr-dev/music-flowww",
+    image: crypto,
+    title: "Cryptoland Home page",
+    description: "A Crypto landing page [STATIC]",
+    preview: "https://crypto-land-omega.vercel.app/",
+    github: "https://github.com/prince-kr-dev/crypto-land",
   },
 ];
 
