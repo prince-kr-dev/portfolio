@@ -47,7 +47,7 @@ const TypingSkills = () => {
 
   return (
     <div >
-      <div className="border border-gray-700  rounded-lg p-2 w-full max-w-2xl font-mono text-sm">
+      <div className="border border-gray-700  rounded-lg p-1 pb-2 w-full max-w-2xl font-mono text-sm">
         {/* Terminal Header */}
         <div className="flex items-center mb-4 pb-2 border-b border-gray-700">
           <div className="flex space-x-1">
@@ -60,8 +60,8 @@ const TypingSkills = () => {
 
         {/* Code Content */}
         <div className="text-white">
-          <span className="text-purple-400 md:text-2xl">const </span>
-          <span className="text-blue-400 md:text-2xl">currentSkill </span>
+          <span className="text-purple-400 md:text-2xl">let </span>
+          <span className="text-blue-400 md:text-2xl">skills </span>
           <span className="text-white md:text-2xl">= </span>
           <span className="text-green-400 md:text-2xl">"</span>
           <span className="text-green-400  md:text-2xl md:font-bold">
