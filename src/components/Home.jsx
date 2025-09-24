@@ -10,6 +10,7 @@ import Footer from "./Footer";
 import Marquee from "./Marquee";
 import Skills from "./Skills";
 import resume from "../assets/Prince_Kumar_Resume.pdf";
+import TypingSkills from "./TypingSkills";
 
 const projects = [
   {
@@ -52,9 +53,7 @@ function Home() {
           <h1 className="text-4xl md:text-6xl font-semibold">
             Hi, I'm <span className="text-heading">Prince Kumar</span>
           </h1>
-          <h1 className="text-3xl md:text-6xl font-semibold">
-            Frontend Developer
-          </h1>
+          <TypingSkills/>
           <h2 className="text-md md:text-2xl font-light md:font-medium my-4 md:my-6">
             I craft fantastic things with code. I also write about those things.
           </h2>

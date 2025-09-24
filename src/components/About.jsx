@@ -1,6 +1,8 @@
 import Footer from "./Footer";
 import profile from "../assets/profile.png";
 import resume from "../assets/Prince_Kumar_Resume.pdf";
+import Skills from "./Skills";
+import TypingSkills from "./TypingSkills";
 
 function About() {
   return (
@@ -17,57 +19,35 @@ function About() {
           <h1 className="text-2xl font-medium">Prince Kumar</h1>
           <h2 className="text-sm font-light">Frontend Developer</h2>
         </div>
+        
         <div className="mt-10">
-          <h1 className="text-xl font-medium mb-3 mt-5">
-            👨‍🎓 Education & Background
-          </h1>
-          <p className="text-md font-light text-gray-400">
-            I am a pre-final year Computer Science student with a strong passion
-            for web development. My academic journey has equipped me with
-            problem-solving skills and a solid foundation in programming and
-            software development.
-          </p>
-          <h1 className="text-xl font-medium mb-3 mt-5">
-            💻 Skills & Expertise
-          </h1>
-          <p className="text-md font-light text-gray-400">
-            I specialize in frontend development, where I enjoy creating
-            responsive and visually appealing user interfaces. Additionally, I
-            have a basic yet growing understanding of Data Structures and
-            Algorithms (DSA), which helps me write efficient and optimized code.
-          </p>
-          <h1 className="text-xl font-medium mb-3 mt-5">
-            🛠️ Tech Stack & Tools
-          </h1>
-          <div className="text-md font-light text-gray-400">
-            I am proficient in the following technologies:
-            <div className="pl-3 flex flex-col">
-              <span>
-                ☻ <b className="font-semibold">Languages:</b> C, C++, and
-                JavaScript
-              </span>
-              <span>
-                ☻ <b className="font-semibold">Frontend:</b> HTML, CSS, and
-                React.js
-              </span>
-              <span>
-                ☻ <b className="font-semibold">Styling:</b> CSS3, Tailwind CSS{" "}
-              </span>
-              <span>
-                ☻ <b className="font-semibold">Version Control:</b> Git and
-                GitHub
-              </span>
-            </div>
+          <div className="mt-14 space-y-4">
+            <h1 className="text-xl md:text-2xl font-semibold flex items-center gap-2">
+              👨‍🎓 Professional Summary
+            </h1>
+            <p className="text-md md:text-lg font-light text-gray-300 leading-relaxed">
+              Full-Stack MERN Developer with hands-on experience in JavaScript,
+              React.js, Node.js, and Express.js. Skilled in building dynamic and
+              responsive web applications from front to back, using MongoDB for
+              database management. I have a solid understanding of data
+              structures and algorithms, which helps me write efficient and
+              optimized code.
+            </p>
           </div>
           <a
             href={resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-5 text-xl font-medium border-2 w-fit px-2 py-0.5 md:px-3 md:py-1 rounded-md hover:bg-black-hover transition-all flex items-center gap-2"
+            className="mt-10 text-xl font-medium border-2 w-fit px-2 py-0.5 md:px-3 md:py-1 rounded-sm hover:bg-black-hover transition-all flex items-center gap-2"
           >
             <i className="ri-file-text-line text-2xl"></i>
             My Resume
           </a>
+          <h1 className="text-xl font-medium mb-3 mt-15">
+            🛠️ Tech Stack & Tools
+          </h1>
+          <Skills />
+          
         </div>
         <Footer />
       </div>
