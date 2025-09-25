@@ -16,7 +16,7 @@ const projects = [
   {
     image: budgetMate,
     title: "BudgetMate",
-    description: "DevTinder Backend - connecting coders beyond the code.",
+    description: "BudgetMate - Track you daily expenses and get monthly insights.",
     preview: "https://budget-mate-net.vercel.app/",
     github: "https://github.com/prince-kr-dev/BudgetMate",
   },
