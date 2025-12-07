@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import budgetMate from "../assets/budgetMate.png";
 import hookImg from "../assets/react-hook.png";
 import routerImg from "../assets/react-router.png";
-import leetanalyzer from "../assets/leetanalyzer.png";
+import talentPrepAI from "../assets/talentPrepAI.png";
 import BlogCard from "./BlogCard";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -14,18 +14,18 @@ import TypingSkills from "./TypingSkills";
 
 const projects = [
   {
+    image: talentPrepAI,
+    title: "TalentPrep AI",
+    description: "AI mock interview Q&A generator",
+    preview: "https://talent-prep-ai.vercel.app/",
+    github: "https://github.com/prince-kr-dev/talent-prep-ai",
+  },
+  {
     image: budgetMate,
     title: "BudgetMate",
     description: "BudgetMate - Track you daily expenses and get monthly insights.",
     preview: "https://budget-mate-net.vercel.app/",
     github: "https://github.com/prince-kr-dev/BudgetMate",
-  },
-  {
-    image: leetanalyzer,
-    title: "LeetAnalyze",
-    description: "A LeetCode analyzer and Comparator",
-    preview: "https://leet-analyze.vercel.app/",
-    github: "https://github.com/prince-kr-dev/leet-analyze?tab=readme-ov-file",
   },
 ];
 

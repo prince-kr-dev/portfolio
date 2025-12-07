@@ -7,6 +7,7 @@ import lumea from "../assets/lumea.png";
 import leetanalyzer from "../assets/leetanalyzer.png";
 import budgetMate from "../assets/budgetMate.png";
 import productDesk from "../assets/productDesk.png";
+import talentPrepAI from "../assets/talentPrepAI.png";
 
 //imported files for blog
 import hookImg from "../assets/react-hook.png";
@@ -15,6 +16,13 @@ import routerImg from "../assets/react-router.png";
 
 
 export const projectList = [
+  {
+    image: talentPrepAI,
+    title: "TalentPrep AI",
+    description: "AI mock interview Q&A generator",
+    preview: "https://talent-prep-ai.vercel.app/",
+    github: "https://github.com/prince-kr-dev/talent-prep-ai",
+  },
   {
     image: budgetMate,
     title: "BudgetMate",
