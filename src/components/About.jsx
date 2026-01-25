@@ -1,8 +1,7 @@
 import Footer from "./Footer";
-import profile from "../assets/profile.png";
+import profile from "../assets/profile.jpg";
 import resume from "../assets/Prince_Kumar_Resume.pdf";
 import Skills from "./Skills";
-import TypingSkills from "./TypingSkills";
 
 function About() {
   return (
@@ -17,7 +16,7 @@ function About() {
         <div className="mt-10 flex flex-col items-center gap-1">
           <img src={profile} className="h-60 w-60 rounded-full" />
           <h1 className="text-2xl font-medium">Prince Kumar</h1>
-          <h2 className="text-sm font-light">Frontend Developer</h2>
+          <h2 className="text-sm font-light">Full Stack Developer</h2>
         </div>
         
         <div className="mt-10">

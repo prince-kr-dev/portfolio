@@ -12,7 +12,7 @@ function Projects() {
         <p className="text-lg font-light mt-2">
           A collection of finest project that i have built
         </p>
-        <div className="flex justify-between flex-wrap mt-15 gap-y-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
           {projectList.map((project, index) => (
             <ProjectCard
               key={index}

@@ -17,7 +17,7 @@ function PopupModel({ setShowmodel }) {
         onClick={closeModel}
         className="fixed inset-0  backdrop-blur-xs flex items-center justify-center z-12"
       >
-        <div className="text-white h-90 w-90 md:w-120 bg-my-black border border-gray-500 rounded-2xl m-auto p-2">
+        <div className="text-white h-80 w-90 md:w-120 bg-my-black border border-gray-500 rounded-2xl m-auto p-2">
           <button onClick={() => setShowmodel(false)}>
             <i className="ri-close-large-fill text-2xl p-1 rounded hover:bg-light-black hover:cursor-pointer transition-all"></i>
           </button>
@@ -42,13 +42,6 @@ function PopupModel({ setShowmodel }) {
               className="px-3 py-1 mt-1 rounded-md hover:bg-light-black transition-all"
               >
               About
-            </Link>
-            <Link
-              onClick={() => setShowmodel(false)}
-              to={"/blog"}
-              className="px-3 py-1 mt-1 rounded-md hover:bg-light-black transition-all"
-            >
-              Blog
             </Link>
           </div>
 

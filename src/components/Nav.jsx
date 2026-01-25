@@ -2,7 +2,6 @@ import { Link, Route, Routes } from "react-router-dom";
 import logo from "../assets/P-dark.png";
 import Home from "./Home";
 import About from "./About";
-import Blog from "./Blog";
 import Projects from "./Projects";
 
 function Nav({setShowmodel}) {
@@ -20,9 +19,6 @@ function Nav({setShowmodel}) {
           <Link to={"/about"} className="hover:text-white transition-all">
             About
           </Link>
-          <Link to={"/blog"} className="hover:text-white transition-all">
-            Blog
-          </Link>
         </div>
         <button onClick={()=>setShowmodel(true)}><i className="ri-command-line text-2xl font-light p-2 rounded backdrop-blur-md bg-white/10 hover:cursor-pointer transition-all"></i></button>
       </div>
@@ -31,7 +27,6 @@ function Nav({setShowmodel}) {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
       </Routes>
     </>
   );
