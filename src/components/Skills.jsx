@@ -4,7 +4,8 @@ const Skills = () => {
   const categorizedSkills = {
     "Frontend Development": ["HTML", "CSS", "React", "Tailwind CSS", "Material UI", "JavaScript"],
     "Backend Development": ["Node.js", "Express.js", "MongoDB"],
-    "Core Concepts & Languages": ["C", "C++", "Data Structures", "OOPs"],
+    "Database": ["MongoDB", "MySQL"],
+    "Core Concepts & Languages": ["C", "C++", "Python", "Data Structures", "OOPs"],
     "Tools & Platforms": ["VS Code", "Postman", "Vercel", "Render", "Git", "GitHub"],
   };
 
@@ -21,7 +22,7 @@ const Skills = () => {
               {skills.map((skill) => (
                 <span
                   key={skill}
-                  className="hover:text-white transition border px-1 py-0.5 rounded-sm"
+                  className="hover:text-white border hover:border-gray-400 border-gray-400/20 px-2 py-0.5 rounded-lg transition-all cursor-pointer"
                 >
                   {skill}
                 </span>

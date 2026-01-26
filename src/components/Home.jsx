@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 import budgetMate from "../assets/budgetMate.png";
 import talentPrepAI from "../assets/talentPrepAI.png";
+import docSense from "../assets/docSense.png"
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Skills from "./Skills";
@@ -9,18 +10,18 @@ import resume from "../assets/Prince_Kumar_Resume.pdf";
 
 const projects = [
   {
+    image: docSense,
+    title: "DocSense AI",
+    description: "DocSense AI is an intelligent platform that lets you chat with your PDFs",
+    preview: "https://docsence-ai.vercel.app/",
+    github: "https://github.com/prince-kr-dev/docsence-ai",
+  },
+  {
     image: talentPrepAI,
     title: "TalentPrep AI",
     description: "AI mock interview Q&A generator",
     preview: "https://talent-prep-ai.vercel.app/",
     github: "https://github.com/prince-kr-dev/talent-prep-ai",
-  },
-  {
-    image: budgetMate,
-    title: "BudgetMate",
-    description: "BudgetMate - Track you daily expenses and get monthly insights.",
-    preview: "https://budget-mate-net.vercel.app/",
-    github: "https://github.com/prince-kr-dev/BudgetMate",
   },
 ];
 

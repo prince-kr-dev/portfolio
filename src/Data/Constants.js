@@ -1,13 +1,12 @@
 //imported files for project
 import portfolio from "../assets/portfolio.png";
-import crypto from "../assets/crypto.png";
 import weather1 from "../assets/react-weather.png";
 import translator from "../assets/translator.png";
-import lumea from "../assets/lumea.png";
 import leetanalyzer from "../assets/leetanalyzer.png";
 import budgetMate from "../assets/budgetMate.png";
 import productDesk from "../assets/productDesk.png";
 import talentPrepAI from "../assets/talentPrepAI.png";
+import docSense from "../assets/docSense.png";
 
 //imported files for blog
 import hookImg from "../assets/react-hook.png";
@@ -16,6 +15,13 @@ import routerImg from "../assets/react-router.png";
 
 
 export const projectList = [
+  {
+    image: docSense,
+    title: "DocSense AI",
+    description: "DocSense AI is an intelligent platform that lets you chat with your PDFs",
+    preview: "https://docsence-ai.vercel.app/",
+    github: "https://github.com/prince-kr-dev/docsence-ai",
+  },
   {
     image: talentPrepAI,
     title: "TalentPrep AI",
@@ -64,13 +70,6 @@ export const projectList = [
     description: "A translator ENG to HIN with Dictionary",
     preview: "https://github.com/prince-kr-dev/translate.io",
     github: "https://github.com/prince-kr-dev/translate.io",
-  },
-  {
-    image: crypto,
-    title: "Cryptoland Home page",
-    description: "A Crypto landing page [STATIC]",
-    preview: "https://crypto-land-omega.vercel.app/",
-    github: "https://github.com/prince-kr-dev/crypto-land",
   },
 ];
 
