@@ -47,8 +47,8 @@ export const projectList = [
     image: productDesk,
     title: "ProductDesk",
     description: "Simple cart with CRUD operations.",
-    preview: "https://leet-analyze.vercel.app/",
-    github: "https://github.com/prince-kr-dev/leet-analyze?tab=readme-ov-file",
+    preview: "https://github.com/prince-kr-dev/product-desk",
+    github: "https://github.com/prince-kr-dev/product-desk",
   },
   {
     image: portfolio,
