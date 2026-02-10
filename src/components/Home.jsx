@@ -35,7 +35,7 @@ function Home() {
             Hi, I'm <span className="text-heading">Prince Kumar</span>
           </h1>
           <h2 className="text-md md:text-2xl font-light md:font-medium my-4 md:my-6">
-            I craft fantastic things with code. I also write about those things.
+            I craft fantastic things with code
           </h2>
 
           <div className="flex items-center gap-3">
