@@ -2,8 +2,8 @@ import React from "react";
 
 const Skills = () => {
   const categorizedSkills = {
-    "Frontend Development": ["HTML", "CSS", "React", "Tailwind CSS", "Material UI", "JavaScript"],
-    "Backend Development": ["Node.js", "Express.js", "MongoDB"],
+    "Frontend Development": ["HTML", "CSS", "JavaScript", "Next.JS", "React.JS", "Tailwind CSS","Responsive Design", "Material UI"],
+    "Backend Development": ["Node.js", "Express.js", "RESTful APIs"],
     "Database": ["MongoDB", "MySQL"],
     "Core Concepts & Languages": ["C", "C++", "Python", "Data Structures", "OOPs"],
     "Tools & Platforms": ["VS Code", "Postman", "Vercel", "Render", "Git", "GitHub"],
