@@ -46,21 +46,24 @@ export default function Hero() {
 
             <div className="flex items-center gap-2 shrink-0">
               <a
-                href="#"
+                href="https://github.com/prince-kr-dev"
+                target="_blank"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-(--border) bg-(--surface) text-muted transition-all duration-300 ease-out hover:bg-(--bg) hover:border-(--text)/20 hover:text-text hover:shadow-md hover:scale-105 active:scale-95"
-              >
+                >
                 <FaGithub size={20} />
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/in/prince-k07/"
+                target="_blank"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-(--border) bg-(--surface) text-muted transition-all duration-300 ease-out hover:bg-(--bg) hover:border-(--text)/20 hover:text-text hover:shadow-md hover:scale-105 active:scale-95"
-              >
+                >
                 <FaLinkedinIn size={20} />
               </a>
 
               <a
-                href="#"
+                href="https://x.com/kr_prince07"
+                target="_blank"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-(--border) bg-(--surface) text-muted transition-all duration-300 ease-out hover:bg-(--bg) hover:border-(--text)/20 hover:text-text hover:shadow-md hover:scale-105 active:scale-95"
               >
                 <FaXTwitter size={20} />
