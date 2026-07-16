@@ -1,5 +1,5 @@
 import React from "react";
-import { skills } from "../data";
+import { skills } from "../data/skills";
 
 function TechStack() {
   return (

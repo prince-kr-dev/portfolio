@@ -1,0 +1,83 @@
+[
+  {
+    "id": "docsense-ai",
+    "title": "AI-Powered Document Analyzer",
+    "subtitle": "AI platform to chat with uploaded PDFs",
+    "description": "A MERN stack document analyzer using a RAG pipeline. Uploads PDFs, retrieves answers with Gemini API embeddings and LLM pipeline. Custom chunking improves search accuracy, and TTL-based expiry manages storage.",
+    "imageUrl": "/images/docsense.webp",
+    "tech": [
+      "REACT.JS",
+      "NODE.JS",
+      "EXPRESS.JS",
+      "MONGODB",
+      "TAILWIND CSS",
+      "GEMINI API",
+      "RAG PIPELINE"
+    ],
+    "liveDemo": "https://docsence-ai.vercel.app/",
+    "repository": "https://github.com/prince-kr-dev/docsence-ai",
+    "featured": true
+  },
+  {
+    "id": "ai-question-generator",
+    "title": "AI Question Generator",
+    "subtitle": "AI interview practice platform",
+    "description": "This MERN stack project allows users to practice AI-generated interview questions with three difficulty levels. Questions are generated using the Gemini API based on user experience and skill level.",
+    "imageUrl": "/images/talentprep.webp",
+    "tech": [
+      "REACT.JS",
+      "NODE.JS",
+      "EXPRESS.JS",
+      "MONGODB",
+      "TAILWIND CSS",
+      "GEMINI API"
+    ],
+    "liveDemo": "https://talent-prep-ai.vercel.app/",
+    "repository": "https://github.com/prince-kr-dev/talent-prep-ai",
+    "featured": true
+  },
+  {
+    "id": "budget-mate",
+    "title": "Personal Finance Tracker",
+    "subtitle": "Smart personal finance tracker",
+    "description": "This MERN stack project helps users track their daily expenses, set monthly budgets, and monitor spending habits in real time. Users can categorize expenses, view insightful charts, and understand where their money goes.",
+    "imageUrl": "/images/budgetmate.webp",
+    "tech": ["REACT.JS", "NODE.JS", "EXPRESS.JS", "MONGODB", "TAILWIND CSS"],
+    "liveDemo": "https://budget-mate-net.vercel.app/",
+    "repository": "https://github.com/prince-kr-dev/BudgetMate",
+    "featured": true
+  },
+  {
+    "id": "portfolio-reactjs",
+    "title": "Personal Portfolio",
+    "subtitle": "Dark-themed developer portfolio",
+    "description": "This portfolio is built using React.js and Tailwind CSS with a fully dark user interface for a modern and focused look. It presents my projects, skills, and tools in a clean, responsive layout with smooth navigation.",
+    "imageUrl": "/images/portfolio.webp",
+    "tech": ["REACT.JS", "TAILWIND CSS", "REACT BITS UI"],
+    "liveDemo": "https://portfolio-iota-prince.vercel.app/",
+    "repository": "https://github.com/prince-kr-dev/portfolio",
+    "featured": true
+  },
+  {
+    "id": "leetcode-analyzer",
+    "title": "LeetCode Analyzer",
+    "subtitle": "LeetCode analyzer that visualizes coding progress",
+    "description": "This project is built using React.js and Tailwind CSS and integrates an external public API to fetch LeetCode user data. It displays detailed statistics like solved problems, difficulty distribution, streaks, and activity patterns.",
+    "imageUrl": "/images/leet_analyze.webp",
+    "tech": ["REACT.JS", "TAILWIND CSS", "APIS"],
+    "liveDemo": "https://leet-analyze.vercel.app/",
+    "repository": "https://github.com/prince-kr-dev/leet-analyze",
+    "featured": false
+  },
+  {
+    "id": "weather-application",
+    "title": "Weather App",
+    "subtitle": "Simple weather app that shows real-time data",
+    "description": "This weather app fetches live weather data from a public API. Users can search for any city to view current temperature, weather conditions, humidity, and wind speed. The interface is clean, responsive, and easy to use.",
+    "imageUrl": "/images/weather.webp",
+    "tech": ["REACT.JS", "MATERIAL UI", "TAILWIND CSS", "APIS"],
+    "liveDemo": "https://weather-io-iota.vercel.app/",
+    "repository": "https://github.com/prince-kr-dev/weather.io",
+    "featured": false
+  }
+]
