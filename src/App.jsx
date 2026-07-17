@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
 import AllProjects from "./components/AllProjects";
+import GithubActivities from "./components/GithubActivities";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         <Hero />
         <TechStack />
         <Projects />
+        <GithubActivities/>
       </div>
     </div>
   );
