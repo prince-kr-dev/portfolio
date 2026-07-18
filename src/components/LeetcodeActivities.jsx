@@ -3,18 +3,21 @@ import { fetchLeetCodeData } from "../utils/portfolioApi";
 
 function LeetcodeActivities() {
   const [leetcodeData, setLeetcodeData] = useState({});
-  
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     fetchLeetCodeData()
-    .then((data) => {
-      setLeetcodeData(data);
-    })
-    .catch((err) => {
-      console.error("Failed to load GitHub data", err);
-    });
+      .then((data) => {
+        setLeetcodeData(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load LeetCode data", err);
+        setLoading(false);
+      });
   }, []);
-  
-  const acceptanceRate = leetcodeData.acceptanceRate || 65;
+
+  const acceptanceRate = leetcodeData.acceptanceRate || 0;
 
   return (
     <div className="mx-auto px-4 lg:px-6 py-6 pt-18">
@@ -32,7 +35,11 @@ function LeetcodeActivities() {
             Total Solved
           </span>
           <span className="text-3xl font-heading font-bold text-(--text)">
-            {leetcodeData?.totalSolved || "300+"}
+            {loading ? (
+              <div className="h-8 w-20 rounded bg-(--border) animate-pulse" />
+            ) : (
+              leetcodeData?.totalSolved
+            )}
           </span>
         </div>
 
@@ -41,7 +48,11 @@ function LeetcodeActivities() {
             Points
           </span>
           <span className="text-3xl font-heading font-bold text-(--text)">
-          {leetcodeData?.contributionPoints || "200+"}
+            {loading ? (
+              <div className="h-8 w-20 rounded bg-(--border) animate-pulse" />
+            ) : (
+              leetcodeData?.contributionPoints
+            )}
           </span>
         </div>
 
@@ -50,7 +61,11 @@ function LeetcodeActivities() {
             Easy
           </span>
           <span className="text-3xl font-heading font-bold text-(--text)">
-          {leetcodeData?.easySolved || "950+"}
+            {loading ? (
+              <div className="h-8 w-16 rounded bg-(--border) animate-pulse" />
+            ) : (
+              leetcodeData?.easySolved
+            )}
           </span>
         </div>
 
@@ -59,7 +74,11 @@ function LeetcodeActivities() {
             Medium
           </span>
           <span className="text-3xl font-heading font-bold text-(--text)">
-          {leetcodeData?.mediumSolved || "200+"}
+            {loading ? (
+              <div className="h-8 w-16 rounded bg-(--border) animate-pulse" />
+            ) : (
+              leetcodeData?.mediumSolved
+            )}
           </span>
         </div>
 
@@ -68,23 +87,32 @@ function LeetcodeActivities() {
             Hard
           </span>
           <span className="text-3xl font-heading font-bold text-(--text)">
-          {leetcodeData?.hardSolved || "10+"}
+            {loading ? (
+              <div className="h-8 w-16 rounded bg-(--border) animate-pulse" />
+            ) : (
+              leetcodeData?.hardSolved
+            )}
           </span>
         </div>
       </div>
+
       <div className="hover:border-(--text)/30 transition-all duration-200 bg-(--surface) border rounded-xl border-(--border) flex flex-col p-4 gap-1 mt-4">
         <span className="text-xs font-heading font-semibold uppercase tracking-wider text-(--text)/70">
           Acceptance Rate
         </span>
 
         <span className="text-3xl font-heading font-bold text-(--text)">
-          {acceptanceRate}%
+          {loading ? (
+            <div className="h-8 w-20 rounded bg-(--border) animate-pulse" />
+          ) : (
+            `${acceptanceRate}%`
+          )}
         </span>
 
         <div className="w-full bg-(--text)/10 h-2 rounded overflow-hidden">
           <div
             className="bg-emerald-500 h-full rounded transition-all duration-500"
-            style={{ width: `${acceptanceRate}%` }}
+            style={{ width: loading ? "0%" : `${acceptanceRate}%` }}
           />
         </div>
       </div>
