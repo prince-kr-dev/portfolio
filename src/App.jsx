@@ -5,6 +5,7 @@ import TechStack from "./components/TechStack";
 import AllProjects from "./components/AllProjects";
 import GithubActivities from "./components/GithubActivities";
 import LeetcodeActivities from "./components/LeetcodeActivities";
+import CTA from "./components/CTA";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
         <Projects />
         <GithubActivities/>
         <LeetcodeActivities/>
+        <CTA/>
       </div>
     </div>
   );
