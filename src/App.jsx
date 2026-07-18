@@ -8,6 +8,7 @@ import LeetcodeActivities from "./components/LeetcodeActivities";
 import CTA from "./components/CTA";
 import FooterProfile from "./components/FooterProfile";
 import Copyright from "./components/Copyright";
+import ScrollToTop from "./components/ui/ScrollToTop";
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
         <CTA/>
         <FooterProfile/>
         <Copyright/>
+        <ScrollToTop/>
       </div>
     </div>
   );
