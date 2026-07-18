@@ -4,6 +4,7 @@ import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
 import AllProjects from "./components/AllProjects";
 import GithubActivities from "./components/GithubActivities";
+import LeetcodeActivities from "./components/LeetcodeActivities";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
         <TechStack />
         <Projects />
         <GithubActivities/>
+        <LeetcodeActivities/>
       </div>
     </div>
   );
