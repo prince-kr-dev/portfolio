@@ -3,7 +3,7 @@ import { LuMessagesSquare } from "react-icons/lu";
 
 function CTA() {
   return (
-    <div className="mx-auto px-4 lg:px-6 flex flex-col items-center py-20 border-t border-(--text)/40 rounded-2xl mt-8">
+    <div className="mx-auto px-4 lg:px-6 flex flex-col items-center py-20 border-t border-(--border) rounded-2xl mt-8">
       <h1 className="font-heading font-medium text-2xl md:text-3xl">
         Have an idea? Let's talk
       </h1>

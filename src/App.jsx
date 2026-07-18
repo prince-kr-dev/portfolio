@@ -6,6 +6,8 @@ import AllProjects from "./components/AllProjects";
 import GithubActivities from "./components/GithubActivities";
 import LeetcodeActivities from "./components/LeetcodeActivities";
 import CTA from "./components/CTA";
+import FooterProfile from "./components/FooterProfile";
+import Copyright from "./components/Copyright";
 
 function Home() {
   return (
@@ -17,6 +19,8 @@ function Home() {
         <GithubActivities/>
         <LeetcodeActivities/>
         <CTA/>
+        <FooterProfile/>
+        <Copyright/>
       </div>
     </div>
   );
