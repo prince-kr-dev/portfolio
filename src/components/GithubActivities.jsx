@@ -177,7 +177,7 @@ function GithubActivities() {
                       <div className="h-5 w-5 rounded bg-(--border) shrink-0" />
                     </div>
                   ))
-                : repos.map((repo) => (
+                : repos.map((repo, idx) => (
                     <a
                       key={repo.id}
                       href={repo.html_url}
@@ -189,9 +189,19 @@ function GithubActivities() {
                         <FiGithub className="h-8 w-8 sm:h-6 sm:w-6 shrink-0 text-(--text)/80" />
 
                         <div className="min-w-0 flex-1">
-                          <h3 className="text-sm sm:text-base font-heading font-semibold text-(--text) truncate">
-                            {repo.name}
-                          </h3>
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <h3 className="text-sm sm:text-base font-heading font-semibold text-(--text) truncate">
+                              {repo.name}
+                            </h3>
+
+                            {/* Badge for the most recently pushed repo */}
+                            {idx === 0 && (
+                              <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-medium shrink-0 bg-emerald-500/10 border border-emerald-600/30 text-green-700 dark:border-emerald-500/30 dark:text-emerald-500">
+                              <span className="w-2 h-2 rounded-full bg-green-600 dark:bg-green-400 animate-pulse" />
+                              Latest Push
+                            </span>
+                            )}
+                          </div>
 
                           <p className="text-xs text-(--text)/60 truncate mt-0.5">
                             {repo.description || "No description available"}
