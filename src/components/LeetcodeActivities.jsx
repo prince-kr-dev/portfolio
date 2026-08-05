@@ -77,7 +77,7 @@ function LeetcodeActivities() {
         transition={{ delay: 0.1, duration: 0.5 }}
         className="font-sans text-(--muted)/80 text-sm md:text-base py-3 pb-8"
       >
-        A snapshot of problem-solving journey
+        A snapshot of my LeetCode problem-solving
       </motion.p>
 
       <motion.div

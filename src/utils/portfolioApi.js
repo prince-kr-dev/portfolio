@@ -3,6 +3,7 @@ const CACHE_KEY = "github_profile_data";
 const CACHE_TIME = 24 * 60 * 60 * 1000; // 24 hours
 
 const LEETCODE_USERNAME = "princek_ds";
+const GFG_USERNAME = "princek_007";
 // 1. Fetch GitHub Data Only
 export const fetchGitHubData = async () => {
   try {
@@ -78,6 +79,20 @@ export const fetchTopRepos = async () => {
     return await res.json();
   } catch (error) {
     console.error("Error fetching repositories:", error);
+    throw error;
+  }
+};
+
+
+export const fetchGFGData = async () => {
+  try {
+    const res = await fetch(
+      `https://gfg-stats.tashif.codes/${GFG_USERNAME}/stats`
+    );
+    if (!res.ok) throw new Error("GFG API failed to load.");
+    return await res.json();
+  } catch (error) {
+    console.error("Error fetching LeetCode data:", error);
     throw error;
   }
 };

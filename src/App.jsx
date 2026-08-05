@@ -9,6 +9,7 @@ import CTA from "./components/CTA";
 import FooterProfile from "./components/FooterProfile";
 import Copyright from "./components/Copyright";
 import ScrollToTop from "./components/ui/ScrollToTop";
+import GFGActivities from "./components/GFGActivities";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
         <Projects />
         <GithubActivities/>
         <LeetcodeActivities/>
+        <GFGActivities/>
         <CTA/>
         <FooterProfile/>
         <Copyright/>
