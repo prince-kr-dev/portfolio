@@ -1,5 +1,22 @@
 [
   {
+    "id": "skillgap-ai",
+    "title": "AI-Powered Skill Gap Analyzer",
+    "subtitle": "AI platform to analyze skills and plan career growth",
+    "description": "An AI-powered skill gap analyzer built with Next.js, TypeScript, and Gemini API. Analyzes current skills against a target role, identifies skill gaps, evaluates career readiness, and generates personalized learning roadmaps and project recommendations.",
+    "imageUrl": "/images/skillgap-ai.webp",
+    "tech": [
+      "NEXT.JS",
+      "TYPESCRIPT",
+      "TAILWIND CSS",
+      "GEMINI API",
+      "SERVER ACTIONS"
+    ],
+    "liveDemo": "https://skill-gap-analysis-roan.vercel.app/",
+    "repository": "https://github.com/prince-kr-dev/skill-gap-analysis",
+    "featured": true
+  },
+  {
     "id": "docsense-ai",
     "title": "AI-Powered Document Analyzer",
     "subtitle": "AI platform to chat with uploaded PDFs",
@@ -56,7 +73,7 @@
     "tech": ["REACT.JS", "TAILWIND CSS", "REACT BITS UI"],
     "liveDemo": "https://portfolio-iota-prince.vercel.app/",
     "repository": "https://github.com/prince-kr-dev/portfolio",
-    "featured": true
+    "featured": false
   },
   {
     "id": "leetcode-analyzer",

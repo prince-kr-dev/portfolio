@@ -47,12 +47,14 @@ function ProjectCard({ project }) {
           <div className="flex gap-3 pt-2">
             <a
               href={project.liveDemo}
+              target="_blank"
               className="w-fit flex items-center justify-between gap-1 rounded-md text-xs bg-(--text) text-(--bg) px-2 py-1 text-center font-semibold transition-all duration-300 hover:bg-(--text)/80"
-            >
+              >
               <FiGlobe /> Visit Site
             </a>
             <a
               href={project.repository}
+              target="_blank"
               className="w-fit flex items-center justify-between gap-1 rounded-md text-xs bg-(--text) text-(--bg) px-2 py-1 text-center font-semibold transition-all duration-300 hover:bg-(--text)/80"
             >
               <FaGithub /> Source Code
